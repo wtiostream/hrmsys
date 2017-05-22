@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="GBK"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+	<!-- follow is action bean -->
+	<bean id="userAction" class="com.hrmsys.action.UserAction" scope="prototype">
+		<property name="userService" ref="userService"/>
+		<property name="jobService" ref="jobService"/>
+	</bean>
+	<bean id="deptAction" class="com.hrmsys.action.DeptAction" scope="prototype">
+		<property name="deptService" ref="deptService"/>
+	</bean>
+	<bean id="jobAction" class="com.hrmsys.action.JobAction" scope="prototype">
+		<property name="jobService" ref="jobService"/>
+	</bean>
+	<bean id="empAction" class="com.hrmsys.action.EmpAction" scope="prototype">
+		<property name="empService" ref="empService"/>
+	</bean>
+	<bean id="tRecordAction" class="com.hrmsys.action.TrainRecordAction" scope="prototype">
+		<property name="tRecordService" ref="tRecordService"/>
+	</bean>
+	<bean id="trainAction" class="com.hrmsys.action.TrainAction" scope="prototype">
+		<property name="trainService" ref="trainService"/>
+	</bean>
+	<bean id="SubsidyAction" class="com.hrmsys.action.SubsidyAction" scope="prototype">
+		<property name="subsidyService" ref="subsidyService"/>
+	</bean>
+	<bean id="SalaryAction" class="com.hrmsys.action.SalaryAction" scope="prototype">
+		<property name="empSalaryService" ref="empSalaryService"/>
+	</bean>
+	<bean id="AttentAction" class="com.hrmsys.action.AttentAction" scope="prototype">
+		<property name="attentService" ref="attentService"/>
+	</bean>
+	<bean id="processAction" class="com.hrmsys.action.ProcessAction" scope="prototype">
+		<property name="processService" ref="processService"/>
+		<property name="userService" ref="userService"/>
+	</bean>
+</beans>

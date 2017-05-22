@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8"/>
+	<constant name="struts.devMode" value="false"/>
+	<package name="default" extends="struts-default,jasperreports-default" namespace="/">
+		<global-results >
+			<result name="input">error.jsp</result>
+		</global-results>
+		
+		<action name="user_*" class="userAction" method="{1}"></action>
+		<action name="menu" class="menuAction" method="load"></action>
+		<action name="dept_*" class="deptAction" method="{1}"></action>
+		<action name="job_*" class="jobAction" method="{1}"></action>
+		<action name="emp_*" class="empAction" method="{1}">
+			<result name="emp">/jsp/commenInfo/basicInfo.jsp</result>
+			<result name="manager">/jsp/manager/basicInfo.jsp</result>
+			<result name="hr">/jsp/hr.jsp</result>
+			<result name="boss">/jsp/boss/basicInfo.jsp</result>
+		</action>		
+		<action name="train_*" class="trainAction" method="{1}"></action>
+		<action name="sal_*" class="SalaryAction" method="{1}"></action>
+		<action name="sub_*" class="SubsidyAction" method="{1}"></action>
+		<action name="tRecord_*" class="tRecordAction" method="{1}"></action>		
+		<action name="attent_*" class="AttentAction" method="{1}"></action>		
+		<action name="pro_*" class="processAction" method="{1}"></action>		
+		<action name="*">
+			<result>{1}.jsp</result>
+		</action>
+	</package>
+</struts>    

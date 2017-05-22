@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="GBK"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+	<bean id="baseDAO" class="com.hrmsys.dao.impl.BaseDAO">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	<bean id="userDAO" class="com.hrmsys.dao.impl.UserDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="jobDAO" class="com.hrmsys.dao.impl.JobDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="departmentDAO" class="com.hrmsys.dao.impl.DepartmentDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="trainDAO" class="com.hrmsys.dao.impl.TrainDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="tRecordDAO" class="com.hrmsys.dao.impl.TrainRecordDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="employeeDAO" class="com.hrmsys.dao.impl.EmployeeDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="subsidyDAO" class="com.hrmsys.dao.impl.SubsidyDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	<bean id="empSalaryDAO" class="com.hrmsys.dao.impl.EmpSalaryDAOImp">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	<bean id="attentDAO" class="com.hrmsys.dao.impl.AttentDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	<bean id="processDAO" class="com.hrmsys.dao.impl.ProcessDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+</beans>

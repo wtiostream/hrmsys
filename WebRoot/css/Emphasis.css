@@ -1,0 +1,821 @@
+﻿@charset "utf-8";
+*{ margin:0px; padding:0px;}
+body{ font:12px "微软雅黑",Arial, Helvetica, sans-serif; color:#5b5b5b;}
+ul,li,dl,dt,dd{ list-style:none;}
+a{ text-decoration:none; color:#717171;}
+a:hover{ color:#333333;}
+html,body,.box{ height:100%;}
+.box{ width:100%;}
+.menu_contraction{ width:33px; height:64px; overflow:hidden; position:absolute; right:3px; top:0px; z-index:999;}
+img{ border:0px;}
+.clear{ clear:both; height:0px; overflow:hidden; line-height:0px; font-size:0;}
+body a{outline:none; blr:expression(this.onFocus=this.blur());}
+.EPBg{ background-color:#003176;}/*2017.2.15*/
+/*---滚动条默认显示样式--*/
+::-webkit-scrollbar-thumb{  
+   background-color:#d2e7ff;  
+   height:50px;  
+   outline-offset:-2px;  
+   -webkit-border-radius:4px;  
+   border: 1px solid #a3c3e9;  
+}  
+ 
+/*---鼠标点击滚动条显示样式--*/  
+::-webkit-scrollbar-thumb:hover{  
+   background-color:#0093ff;  
+   height:50px;  
+   -webkit-border-radius:4px; 
+   border-color:#0074c9; 
+}  
+ 
+/*---滚动条大小--*/  
+::-webkit-scrollbar{  
+   width:12px;  
+   height:8px;  
+}  
+ 
+/*---滚动框背景样式--*/  
+::-webkit-scrollbar-track-piece{  
+   background-color:#f4f4f4;  
+   -webkit-border-radius:0;  
+}
+/*----头部样式-----*/
+.EPHeader01{ background:url(../images/EmphasisPersonnel/HeaderBg01.png) repeat-x; height:30px; border-bottom:1px solid #003d91; position:relative;}
+.EPLogo{ background:url(../images/EmphasisPersonnel/Logo.png) no-repeat left center; line-height:30px; height:30px; font-size:15px; color:#fff; font-weight:bold; padding-left:56px; margin-left:10px;}
+.EPHeaderClose { position:absolute; right:0; top:1px;}
+.EPCloseNav01, .EPCloseNav02, .EPCloseNav03{ width:26px; height:27px; display:block; float:left; background-image:url(../images/EmphasisPersonnel/Close.png); margin-right:5px; cursor:pointer;}
+.EPCloseNav02 { background-position:-26px 0;}
+.EPCloseNav03 { background-position:-52px 0;}
+.EPCloseNav01:hover { background-position:0 -27px;}
+.EPCloseNav02:hover { background-position:-26px -27px;}
+.EPCloseNav03:hover { background-position:-52px -27px;}
+.EPMenu{ background:url(../images/EmphasisPersonnel/HeaderBg02.png) repeat-x; height:50px; border-bottom:1px solid #0d4e92; position:relative;}
+.EPMenu a{ display:block; height:50px; width:136px; line-height:50px; font-size:15px; color:#fff; text-align:center; float:left; border-right:1px solid #104986; font-weight:bold; position:relative;}
+.EPMenu a:hover{ color:#FF0; background: #0581bb url(../images/EmphasisPersonnel/Nav_over.png) repeat-x left top;}
+.EPMenu .EPNav_on{ background:url(../images/EmphasisPersonnel/Nav_on.png) center center; }
+.EPBack{ width:88px; height:32px; background-image:url(../images/EmphasisPersonnel/Back.png); color:#fff; display:block; cursor:pointer; position:absolute; right:10px; top:9px; line-height:32px; text-indent:18px;}
+.EPBack:hover{ background-position:0 -32px; color:#FF0;}
+/*三门峡11.15*/
+.HeaderMenu02{ height:69px;}
+.HeaderMenu02 a{height:69px; width:140px; line-height:50px;}
+.HMTitle{ display:inline-block; position:relative; top:-10px;}
+.EPMenu img{ top:4px; position:relative; margin-left:5px;}
+.HeaderMenu02 img{ top:9px; position:relative; margin-right:5px; margin-left:0;}
+.EPMenu02{ position:absolute; top:50px; left:0px; background-color:#0581bb; width:136px; z-index:9999; font-weight:normal;}
+.EPMenu02 li{ line-height:40px; color:#fff; text-align:center; font-size:14px; cursor:pointer;}
+.EPMenu02 li:hover{ background-color:#4eadff;}
+.EPMenu03{ background-color:#0859ac; height:34px; padding-left:0px; /**background-image:url(../images/EmphasisPersonnel/EPMenu03_Bg.png);**/  position:relative;}
+.EPMenu03 a{ display:block; line-height:26px; color:#fff; float:left; padding:1px 15px; font-size:14px; margin:3px 5px 0;}
+.EPMenu03 a:hover{ background-color:#0473ff;}
+.EPMenu03 .EPNav03_on,.EPMenu03 .EPNav03_on:hover{background-color:#0473ff;  color:#fff;}
+.EPMenu03_line{ height:14px; width:1px; float:left; background-color:#fff; display:block; margin:10px 10px; }
+.EPDownMenu { width:32px; height:32px; background:url(../images/DownMenu.png) no-repeat left top; margin-right: 10px; display:block; float: left;}
+.EPDownMenu:hover { background-position:0 -32px;}
+.EPDate{ display:block; float:left; line-height:30px; color:#fff; margin-right:15px;}
+.EPDate span{ color:#FFFF00; font-weight:bold;}
+.EPIM,.EPIMGif{ display:block; width:42px; height:42px; background-image:url(../images/EmphasisPersonnel/EPIM_bg.png); position:absolute; top:14px; right:10px; cursor:pointer;}
+.EPIM:hover{ background-position:0 -42px;}
+.EPIMGif{ background-image:url(../images/EmphasisPersonnel/IMGif.gif);}
+.EPMenu03_Title{ line-height:34px; float:left; color:#333; font-size:14px; font-weight:bold;}
+.EPMenu03_Type{ background-image:url(../images/EmphasisPersonnel/EPMenu03_Type.png); width:140px; height:34px; cursor:pointer; float:left; border-right:1px solid #79a4c9; margin-right:15px; position:relative;}
+.EPMenu03_Type:hover{ background-position:0 -34px;}
+.EPTypeList { border:1px solid #79a4c9; background-color:#e1ecf2; position:absolute; top:34px; left:0; z-index:2; width:139px; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1); }
+.EPTypeList li{ line-height:34px; font-size:14px; text-align:center; cursor:pointer; font-size:14px; color:#0057b1;}
+.EPTypeList li:hover{ background-color:#b2d1e7;}
+/*----关注人员详情-----*/
+.EPContent{ border:0px solid #2f96ff; margin:0px; min-height:700px; background-color:#fff; position:relative;}/*2017.2.15*/
+.EPContent_r{ width:310px; height:100%; border-left:1px solid #e3e3e3; position:absolute; right:0; top:0; background-color:#fff;}
+.EPTitle{ height:34px; background:url(../images/EmphasisPersonnel/TitleBg.png) repeat-x; border-bottom:1px solid #ccc; position:relative;}
+.EPTitle h1{ line-height:34px; font-size:14px; font-weight:bold; color:#333; text-indent:10px;}
+.EPSearch{ height:24px; border:1px solid #ccc; margin:10px; background-color:#fff; border-radius:3px;/*圆角*/ position:relative;margin-bottom: 5px;}
+.EPSearchBtn{ width:20px; height:20px; background-image:url(../images/EmphasisPersonnel/SearchBtn.png); display:block; position:absolute; right:5px; top:2px;}
+.EPSearchBtn:hover{ background-position:0 -20px;}
+.EPSearch input{ height:22px; font:12px/22px "微软雅黑",Arial, Helvetica, sans-serif; text-indent:5px; color:#333; width:80%; border:1px solid #fff;}
+.EPSearch_Tool{ position:absolute; right:10px; top:12px; width:200px; margin:0; z-index:1;}/*2016.12.26*/
+/*我的关注人员列表*/
+.EPListBox{ position:relative; overflow:auto;}
+.EPList,.EPList_on{ border:1px solid #ccc; border-radius:3px;/*圆角*/ padding:10px; margin:0px 10px 10px; background-color:#fff; position:relative; min-height:84px; cursor:pointer; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);}
+.EPList:hover,.EPList_on{ border-color:#84bdff; background-color:#f7fbff;}
+.EPList_on{ border-color:#0CF; background-color:#e3fcff;}
+.EPListImg{ position:absolute; left:10px; top:10px; width:64px;}
+.EPList_r{ margin-left:74px;}
+.EPList_r p{ line-height:20px; overflow: hidden; text-overflow: ellipsis; white-space:nowrap;}
+.EPList_r .EPListName{ font-size:14px; color:#1361b7;width: 92%;}
+.EPListBtnBox{ position:absolute; top:10px; right:10px;}
+.EPListBtnBox a{ display:block; width:20px; height:20px; float:left; margin-left:10px;}
+.EPListBtn01,.EPListBtn02,.EPListBtn03,.EPListBtn04,.EPListBtn05{ background-image:url(../images/EmphasisPersonnel/ListIcon.png);}
+.EPListBtn02{ background-position:-20px 0;}
+.EPListBtn03{ background-position:-40px 0;}
+.EPListBtn04{ background-position:-60px 0;}
+.EPListBtn05{ background-position:-80px 0;}
+.EPListBtn01:hover{ background-position:0 -20px;}
+.EPListBtn02:hover{ background-position:-20px -20px;}
+.EPListBtn03:hover{ background-position:-40px -20px;}
+.EPListBtn04:hover{ background-position:-60px -20px;}
+.EPListBtn05:hover{ background-position:-80px -20px;}
+
+.EPListBtn06{ background-image:url(../images/EmphasisPersonnel/ListIcon.png);background-position:-80px -20px;}
+.EPRank01{ color:#F00;}
+.EPRank02{ color:#ff6600;}
+.EPRank03{ color:#ff9c00;}
+.EPRank04{ color:#33c5ff;}
+.EPGroupTitle{ border:1px solid #ccc; border-radius:3px;/*圆角*/ margin:0px 10px 10px; background-color:#fff; position:relative; line-height:30px; cursor:pointer; color: #1361b7; font-size: 14px; padding:0 10px; position:relative;}
+.EPGroupTitle:hover{ border-color:#84bdff; background-color:#f7fbff;}
+.Panel01,.Panel02{ display:block; width:14px; height:14px; background-image:url(../images/EmphasisPersonnel/Panel.png); float:left; margin:9px 10px 0 0;}
+.Panel02{ background-position:0 -14px;}
+.EPGroupTitle .EPListBtnBox{ top:5px;}
+.EPGroupContent{ margin:0px 10px 10px; padding-top:10px; position:relative; background-color:#f5f7f4; border:1px dashed #ccc;}
+.EPContent_l{ margin-right:311px; height:100%;}
+.EPState01{ color:#F00;}
+.EPState02{ color:#0C0;}
+.EPState03{ color:#3CF;}
+.EPList03{ float:left; margin:5px; width:340px;}
+.EPList03 .EPListImg{ width:128x; height:96px; top:12px;}
+.EPList03 .EPList_r{ margin-left:138px;}
+.EPBackTop{ display:block; width:32px; height:35px; position:absolute; bottom:10px; right:15px; background-image:url(../images/EmphasisPersonnel/BackTop.png); z-index:2;}
+.EPBackTop:hover{ background-position:0 -35px;}
+/*表格*/
+.EPTable{ width:100%; color:#333;}
+.EPTable span{ display:block; padding:0 5px; line-height:18px; word-break: break-all;}
+.EPTable{ border-collapse:collapse;}
+.EPTable,.EPTable th, .EPTable td{ border: 1px solid #e3e3e3; height:30px;}
+.EPTable th{ background:url(../images/EmphasisPersonnel/Table_bg.png) repeat-x; color:#064886; overflow:hidden;}
+.EPTable_r{ text-align:left;}
+.EPTable_l{ text-align:right; color:#276795;}
+.EPPhoto{ text-align:center; position: relative; height:182px; padding-top:32px;}
+.EPTableBut{ color:#2a86f3;}
+.EPTableBut:hover{ color:#064886; text-decoration:underline;}
+.EPTable .TableLine{ color:#2a86f3; display:inline;}
+.EPTableTitle{ color:#276795; margin-left:10px; max-width:300px; overflow: hidden; text-overflow: ellipsis; white-space:nowrap; display:block;}
+.EPTableTitle:hover{ color:#1c82e6;}
+.EPTableBtn{ color:#1c82e6;}
+.EPTable .EPTableSpan02{ display:inline; color:#1c82e6; margin:0 5px;}
+.EPTable .EPTableSpan02:hover{ color:#276795;}
+/*关注详情*/
+.EPTrack{ width:360px; float:left; margin-right:20px;}
+.EPDetails{ padding:0 30px; height:665px; overflow:auto;}
+.EPDetailsTitle,.EPTrackTitle{ margin:10px 0; height:22px; font-weight:bold; line-height:22px; font-size:14px; color:#064886;}
+.EPTrackTitle{ background:url(../images/EmphasisPersonnel/Line02.png) repeat-x left center; position:relative; margin:10px 0; height:22px;}
+.EPTrackTitle h1{ font-size:14px; color:#064886; font-weight:bold; line-height:22px; float:left; padding-right:10px; background-color:#fff;}
+.EPTrackAdd,.EPUnfold01,.EPUnfold02{ display:block; width:22px; height:22px; background-image:url(../images/EmphasisPersonnel/EPAdd.png); position:absolute; right:0; top:0px;}
+.EPUnfold01,.EPUnfold02{ background-image:url(../images/EmphasisPersonnel/EPOpen.png);}
+.EPUnfold02{ background-position:-22px 0;}
+.EPUnfold01:hover{ background-position:0 -22px;}
+.EPUnfold02:hover{ background-position:-22px -22px;}
+.EPTrackAdd:hover{ background-position:0 -22px;}
+.EPTrackContent{ background:url(../images/EmphasisPersonnel/Line.png) repeat-y 85px 0px;}
+.EPTrackList{ position:relative;}
+.EPTrackTime{ text-align:center; width:80px; color:#00c6ff; font-size:14px; position:absolute; left:0; top:23px;}
+.EPTrackTime .EPTrackDate{ color:#1361b7; font-size:12px;}
+.EPTrackList_r{ margin-left:100px; border-radius:3px;/*圆角*/box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1); border: 1px solid #e3e3e3; padding:10px; min-height:65px; position:relative; word-break:break-all; line-height:20px;color:#333;  margin-bottom:10px; cursor: pointer;}
+.EPTrackList_r:hover{ border-color:#84bdff; background-color:#f7fbff;}
+.EPTrackList_j{ width:20px; height:22px; background-image:url(../images/EmphasisPersonnel/EPEventBg.png); position:absolute; left:-20px; top:29px;}
+.EPTrackList_r:hover .EPTrackList_j{ height:22px; background-image:url(../images/EmphasisPersonnel/EPEventBg03.png);}
+.EPTrackListImgBox{ width:50px; text-align:center;  position:absolute; left:10px; top:10px;}
+.EPTrackListText{ font-size:14px; color:#666;}
+.EPTrackList_c{ margin-left:60px;}
+.EPTrackListTitle{ font-size:14px; color:#064886; overflow: hidden; text-overflow: ellipsis; white-space:nowrap;display: block;}
+.EPTrackList_on .EPTrackList_r{ border-color:#ffaeae;}
+.EPTrackList_on .EPTrackTime{ color:#ff5555;}
+.EPTrackList_on .EPTrackDate{ color:#e30000;}
+.EPTrackList_on .EPTrackList_j,.EPTrackList_on .EPTrackList_r:hover .EPTrackList_j{ background-image:url(../images/EmphasisPersonnel/EPEventBg02.png);}
+.EPTrackNavBox{ position:absolute; right:8px; top:5px; width:20px;}
+.EPTrackNav01,.EPTrackNav02,.EPTrackNav03{ background-image:url(../images/EmphasisPersonnel/NotepadBut2.png); width:20px; height:20px; display:block; float:left; margin-left:3px;}
+.EPTrackNav01:hover{ background-position:0 -20px;}
+.EPTrackNav02{ background-position:-20px 0px;}
+.EPTrackNav02:hover{ background-position:-20px -20px;}
+.EPTrackNav03{ background-image: url(../images/EmphasisPersonnel/EPBtn.png);}
+.EPTrackNav03:hover{ background-position:0 -20px;}
+.EPOperate{min-width:84px; position:absolute; right:5px; top:28px; background-color:#fff; border:1px solid #ccc; border-radius:3px;/*圆角*/box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); padding:10px 10px 0; z-index:1;}
+.EPOperate a{ display:block; line-height:24px; text-align:center; color:#fff; background-color:#007ce4; margin-bottom:10px; padding:0 10px;}
+.EPOperate a:hover{ background-color:#3ca0f4; color:#fff;}
+.EPTrackListTitle{ font-size:14px; color:#064886;}
+.EPTrackListTitle:hover{ color:#0066cc;}
+.EPDetailsTitle02{ font-size:12px; color:#333;}
+.EPTrackDepartment{ text-align:center; width:80px; color:#00c6ff; font-size:14px; position:absolute; left:0; top:15px; font-weight:bold;}/*2016.9.19*/
+.EPTrackDepartment_r{ margin-left:100px;}/*2016.9.19*/
+.EPTrackDepartment_r .EPTrackList_r{ margin-left:0px; float:left; width:250px; margin-right:14px;}/*2016.9.19*/
+.EPDepartmentTitle{  /*overflow: hidden; text-overflow: ellipsis; white-space:nowrap;*/ width:100%;}/*2016.9.19*/
+.EPTrackTab{ position:absolute; left:0; top:0;}
+.EPTrackTab a,.EPTrackTabNav_on{ border-radius:3px; color:#fff; display:block; float:left; min-width:60px; padding:0 10px; text-align:center; line-height:26px; margin-right:10px; border: 1px solid #ccc;  color: #064886; font-weight:bold; background-color:#fff;}
+.EPTrackTab a:hover{ background-color: #e3fcff; border-color: #0cf;}
+.EPTrackTab .EPTrackTabNav_on,.EPTrackTab .EPTrackTabNav_on:hover{ color:#fff; background-color: #007ce4; border-color:#0059a4;}
+/*轨迹列表切换*/
+.EPShowChange{ position:absolute; right:26px; top:-2px;}
+.EPShowChangeNav01,.EPShowChangeNav02,.EPShowChangeNav01_on,.EPShowChangeNav02_on{ display:block; width:30px; height:26px; background-image:url(../images/EmphasisPersonnel/EPShowChange.png); float:left; margin-right:5px;}
+.EPShowChangeNav01:hover,.EPShowChangeNav01_on{ background-position:0 -26px;}
+.EPShowChangeNav02{ background-position:-30px 0;}
+.EPShowChangeNav02:hover,.EPShowChangeNav02_on{ background-position:-30px -26px;}
+/*---人员信息查询---*/
+.EPContent_l02{ height:100%; width:200px; border-right:1px solid #003176; position:absolute; left:0; top:0; background-color:#003176;}/*2017.2.15*/
+.EPSort{ padding:10px;}
+.EPSort a{ display:block; width:178px; height:34px; line-height:34px; color:#1361b7; text-align:center; background-color:#0b70ff; border:1px solid #0b70ff; font-size:14px; margin-bottom:10px; border-radius:2px;/*圆角*/ position:relative;}/*2017.2.25*/
+.EPSort a:hover{ background:#34a1ff; border-color:#34a1ff; color:#fff;}/*2017.2.25*/
+.EPSort .EPSortNav_on,.EPSort .EPSortNav_on:hover{ background:#34a1ff; border-color:#34a1ff; color:#fff; font-weight:bold; position:relative;}/*2016.9.13*/
+.EPSort .EPSortNav_on:hover{ background-position:0 0;}
+.EPContent_r02{ margin-left:201px; height:100%;}
+/*搜索*/
+.EPSearch02{ background-color:#f5faff; border-bottom:1px solid #dfdfdf; padding:5px 10px;position:relative;}
+.EPTextbox { float:left;}
+.EPTextboxTable { width:240px; line-height:30px;}
+.EPTextboxTable_l { width:90px; text-align:right;}
+.EPTextboxTable02 { width:480px;}
+.EPSelect01 { width:140px; height:20px; float:left; margin-left:5px;}
+.EPText01, .EPtextarea01, .EPSelect01,.EPText02{ border:1px solid #cdcdcd; font:12px/20px "微软雅黑", "宋体"; color:#333;}
+.EPText01,.EPText02{ height:20px; width:140px; float:left; margin-left:5px; text-indent:5px; line-height: 20px;}
+.EPText02{ width:61px;}
+.EPBut01{ min-width:60px; text-align:center; background:url(../images/EmphasisPersonnel/PopUpBut.png) repeat-x; height:24px; border:1px solid #222; display:block; line-height:24px; border-radius:3px;/*圆角*/ color:#fff; margin:0 5px; float:left;}/*2016.1.28*/
+.EPBut01:hover{ background-position:0 -24px; color:#FF0;}
+.EPBut02{ min-width:40px; text-align:center; text-align:center; background:url(../images/EmphasisPersonnel/PopUpBut02.png) repeat-x; height:16px; border:1px solid #222; display:block; line-height:16px; float:left; margin-left:10px; padding:4px 10px; border-radius:3px;/*圆角*/ color:#fff; } /*2016.1.28*/
+.EPBut02:hover{ background-position:0 -24px; color:#FF0;}
+.EPList02{ width:318px; float:left; margin:8px;}
+.EPSearchResult{ padding:0 10px;}
+.EPPageBox{ padding:10px; height:30px; text-align:center;}
+.EPSearchNumber{ line-height:30px; text-indent:10px;}
+.EPSearchNumber span{ color:#F00; font-weight:bold; margin:0 5px;}
+/*实战工具2016.12.26*/
+.EPSearchNumber_l{ float:left;}
+.EPRanking{ float:left;}
+.EPRanking span{ display:block; float:left; font-weight:bold; color:#666; margin-left:20px;}
+.EPRanking a{ display:block; float:left; width:40px; text-align:center; line-height:22px; text-indent:0; margin-top:4px; margin-right:10px; border-radius:3px;}
+.EPRanking a:hover{ color:#1361b7; background-color:#d2e7ff; }
+.EPRanking_on,.EPRanking .EPRanking_on:hover{ background-color:#1f83f3; color:#fff;}
+.EPSoftware{ border:1px solid #ccc; border-radius:3px;/*圆角*/ padding:15px; margin:8px; background-color:#fff; position:relative; min-height:84px; cursor:pointer; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1); width:300px; float:left;}
+.EPSoftware:hover{ border-color:#84bdff; background-color:#f7fbff;}
+.EPSoftwareTitle{ color: #1361b7; font-size: 14px; width:80%; margin-bottom:5px;}
+.EPSoftware p{ line-height: 20px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.EPSoftwareImg{ width:60px; position:absolute; left:15px; top:15px;}
+.EPSoftware_r{ margin-left:70px;}
+.EPSoftwareScore span{ display:block; float:left;}
+.EPScoreImg01,.EPScoreImg01_on{ width:16px; height:16px; background-image:url(../images/EmphasisPersonnel/Score01.png); margin-top:2px;}
+.EPScoreImg01_on{ background-image:url(../images/EmphasisPersonnel/Score01_on.png);}
+.EPSoftwareBtn,.EPSoftwareBtn_no{ line-height:20px; display:block; margin-top:5px; background-color:#1f83f3; text-align:center; color:#fff; cursor:pointer;}
+.EPSoftwareBtn:hover{ background-color:#3ca0f4;}
+.EPSoftwareBtn_no{ background-color:#bdbdbd; cursor:default;}
+/*警情详情*/
+.EPList_jq .EPList_r{ margin-left:0;}
+.EPTitleTab{ position:absolute; left:10px; top:5px;}
+.EPTitleTab a{ display:block; float:left; line-height:28px; text-align:center;  min-width:60px; font-size:14px; border:1px solid #a6d0ff; padding:0 10px; color:#333; margin-right:5px; border-radius:3px 3px 0px 0px; background-image:url(../images/EmphasisPersonnel/Btn.png); color:#1361b7;}
+.EPTitleTab a:hover{ background-position:0 -34px; border-color:#75b5ff;}
+.EPTitleTab .EPTitleTabNav_on,.EPTitleTab .EPTitleTabNav_on:hover{ background:url(../images/EmphasisPersonnel/Btn_on.png) no-repeat center center; color:#fff; border-color:#003c77;}
+.EPCondition{ line-height:20px; padding:5px 30px 0 10px; height:20px; position:relative;}
+.EPCNumber{ color:#F00; font-weight:bold;}
+.EPCTime{ color:#F00;}
+.EPSet{ width:40px; height:20px; /*background-image:url(../images/EmphasisPersonnel/Set.png);*/ display:block; position:absolute; right:5px; top:5px; background-color:#007ce4; text-align:center; border-radius:30px; color:#fff;}
+.EPSet:hover{ /*background-position:0 -20px;*/ background-color:#3ca0f4; color:#fff;}
+.EPTitleNumber{ font-size:12px; color:#F00;}
+.EPSetPopUp{ position:absolute; right:10px; top:28px; background-color:#fff; border:1px solid #ccc; border-radius:3px;/*圆角*/box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); padding:10px; width:268px; z-index:2;}
+.EPSetClose{ display:block; position:absolute; right:5px; top:5px; width:20px; height:20px; background:url(../images/EmphasisPersonnel/NotepadBut2.png) no-repeat -20px 0;}
+.EPSetClose:hover{ background-position:-20px -20px;}
+/*2016.12.24设置按钮*/
+.EPSetBox02{ position:absolute; right:44px; top:5px; z-index:2;}
+.EPSet02{ min-width:60px; height:22px; line-height:22px; padding:0 5px; display:block; background-color:#007ce4; text-align:center; border-radius:30px; color:#fff; float:left; margin-left:10px;}
+.EPSet02:hover{ background-color:#3ca0f4; color:#fff;}
+.EPShrinkage_Close,.EPShrinkage_OPen{ display:block; width:22px; height:22px; background-image:url(../images/EmphasisPersonnel/OpenBtn.png); position:absolute; right:10px; top:5px; z-index:1;}
+.EPShrinkage_Close:hover{ background-position:0 -22px;}
+.EPShrinkage_OPen{ background-position:-22px 0;}
+.EPShrinkage_OPen:hover{ background-position:-22px -22px;}
+.EPShrinkageTitle{ color:#333; line-height:22px; font-weight:bold;}
+/*通用表格*/
+.EPTable02{ width:100%; color:#333; border-collapse:collapse;}
+.EPTableSpan{ display:block; margin-left:5px; line-height:18px; float:left;}
+.EPTable02,.EPTable02 th, .EPTable02 td{ height:30px;}
+.EPBtnBox{ padding:10px 0; margin-left:58px;}
+.EPBtnBox02{ padding:10px 10px 5px; height:26px;}
+.EPBut_r{ float:right;}
+.EPTrackListNav,.EPTrackListNav02,.EPTrackListNav03,.EPTrackListNav04{ color:#008aff; display:block; line-height:22px;}/*2016.9.19*/
+.EPTrackListNav02{ color:#0C0;}/*2016.9.19*/
+.EPTrackListNav03{ color:#999;}/*2016.9.19*/
+.EPTrackListNav04{ color:#F90;}
+.EPTrackListNav:hover{ color:#1361b7; text-decoration:underline;}/*2016.9.19*/
+.EPTrackListNav02:hover{ color:#090; text-decoration:underline;}/*2016.9.19*/
+.EPTrackListNav03:hover{ color:#333; text-decoration:underline;}/*2016.9.19*/
+.EPTrackListNav04:hover{ color:#F60; text-decoration:underline;}
+/*加载更多按钮*/
+.PUMore{ display:block; margin:10px 0px; line-height:24px; text-align:center; border:1px solid #ccc; background-color:#f4f4f4; border-radius:3px;/*圆角*/}
+.PUMore:hover{ border:1px solid #a3d0ff; background-color:#eef6ff; color:#0066cc;}
+/*---网址导航----*/
+.EPWebLink{ float:left; width:192px; text-align:center; padding:10px; border:1px solid #ccc; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1); cursor:pointer; margin:8px; border-radius:3px;}
+.EPWebLink:hover{ border-color:#84bdff; background-color:#f7fbff; color:#1361b7;}
+.EPWebLinkTitle{ line-height:30px; overflow: hidden; text-overflow: ellipsis; white-space:nowrap; font-size:13px;}
+/*效能分析*/
+.EPScreenBox{ position:relative;}
+.EPScreenBox_r{ margin-left:50px;}
+.EPScreenTitle{ line-height:26px; display:block; float:left;font-size:12px; position:absolute; left:0px; top:2px; width:50px; font-weight:bold; text-align:right;}
+.EPScreenNav,.EPScreenNav_on{ display:block; float:left; padding:1px 5px; line-height:24px; font-size:12px; color:#555; margin:2px 2px;}
+.EPScreenNav:hover,.EPScreenNav_on{ border:1px solid #a6d0ff; padding:0 4px; color:#1361b7;}
+.EPScreenNav_on{ background:url(../images/EmphasisPersonnel/ClueSort_on.png) no-repeat bottom right;}
+.EPModelBox{ position:absolute; right:10px; top:10px;}
+.EPModelNav01,.EPModelNav01_on,.EPModelNav02,.EPModelNav02_on,.EPModelNav03,.EPModelNav03_on,.EPModelNav04,.EPModelNav04_on{ background-image:url(../images/EmphasisPersonnel/Pattern.png); display:block; float:left; width:26px; height:24px; margin-left:5px;}
+.EPModelNav01:hover{ background-position:0 -24px;}
+.EPModelNav01_on{ background-position:0 -48px;}
+.EPModelNav02{ background-position:-26px 0px;}
+.EPModelNav02:hover{ background-position:-26px -24px;}
+.EPModelNav02_on{ background-position:-26px -48px;}
+.EPModelNav03{ background-position:-52px 0px;}
+.EPModelNav03:hover{ background-position:-52px -24px;}
+.EPModelNav03_on{ background-position:-52px -48px;}
+.EPModelNav04{ background-position:-78px 0px;}
+.EPModelNav04:hover{ background-position:-78px -24px;}
+.EPModelNav04_on{ background-position:-78px -48px;}
+.EPBack02{ display:block; width:30px; height:30px; background-image:url(../images/EmphasisPersonnel/Back02.png); position:absolute; right:10px; top:10px;}
+.EPBack02:hover{ background-position:0 -30px;}
+.erroring{ position:absolute; clear:left; line-height:34px; padding:5px; width:220px;background: url(../images/pdcs/loadingBg.png) no-repeat 0px center;}
+.loading img, .erroring img{ float:left; margin:0 10px 0 30px; margin-top:9px;}
+.EPScreenNav span,.EPScreenNav_on span{ color:#F00;}
+/*----重大活动安保----*/
+.EPProcedureBox{ padding:10px 10px 0; position:relative; height:26px;}
+.EPProcedureBtn01,.EPProcedureBtn02,.EPProcedureBtn03,.EPProcedureBtn01_on,.EPProcedureBtn02_on,.EPProcedureBtn03_on{ width:202px; height:26px; display:block; background-image:url(../images/EmphasisPersonnel/ProcedureBtn.png); float:left; color:#333; line-height:26px; text-align:center; font-size:14px;}
+.EPProcedureBtn01:hover{ background-position:0 -26px;}
+.EPProcedureBtn01_on{ background-position:0 -52px;}
+.EPProcedureBtn02{ background-position:-202px 0;}
+.EPProcedureBtn02:hover{ background-position:-202px -26px;}
+.EPProcedureBtn02_on{ background-position:-202px -52px;}
+.EPProcedureBtn03{ background-position:-404px 0;}
+.EPProcedureBtn03:hover{ background-position:-404px -26px;}
+.EPProcedureBtn03_on{ background-position:-404px -52px;}
+.EPProcedureBtn01_on,.EPProcedureBtn02_on,.EPProcedureBtn03_on,.EPProcedureBtn01_on:hover,.EPProcedureBtn02_on:hover,.EPProcedureBtn03_on:hover{ color:#fff;}
+.EPBack03{ background-image:url(../images/EmphasisPersonnel/Back03.png); width:94px; height:26px; display:block; position:absolute; right:10px; top:10px; text-align:center; color:#e50000; line-height:26px;}
+.EPBack03:hover{ background-position:0 -26px; color:#F00;}
+/*基本信息*/
+.EPActivityAddBox01{ padding:20px 80px 0;}
+.EPTable02{ width:100%; color:#333;}
+.EPTable02 span{ display:block; padding:0 5px; line-height:18px; word-break: break-all;}
+.EPTable{ border-collapse:collapse;}
+.EPTable02,.EPTable02 th, .EPTable02 td{ border: 0px solid #e3e3e3; height:42px;}
+.EPTable02 th{ background:url(../images/PopUp/table_title_bg.png) repeat-x; color:#064886; overflow:hidden;}
+.EPTable02_r{ text-align:left;}
+.EPTable02_l{ text-align:left; color:#276795; font-size:14px;}
+.EPActivityText01,.EPActivitySelect01,.EPActivityText02,.EPActivityTextarea01{ width:360px; border:1px solid #dcdcdc; height:30px; padding:0 10px; background-color:#f5f7f4; color:#333; font:14px/30px "微软雅黑", "宋体"; float:left; margin-left:5px;}
+.EPActivitySelect01{ width:382px; padding-left:6px;}
+.EPActivityText02{ width:164px;}
+.EPActivityTextarea01{ line-height:22px; height:200px; margin:6px 0 5px 5px;}
+.EPActivityBtnBox{ margin:15px 0; text-align:center;}
+.EPActivityBtn01{ display:inline-block; background:url(../images/EmphasisPersonnel/Btn02.png) repeat-x; line-height:30px; text-align:center; color:#fff; min-width:60px; border:1px solid #003c77; border-radius:3px;/*圆角*/ padding:0 10px; margin-right:10px;}
+.EPActivityBtn01:hover{ background-position:0 -30px; color:#FF0;}
+/*文件加载*/
+.EPFileLoading{ height:12px; margin:0 15px; background-color:#e0e0e0; line-height:12px; text-align:center; position:relative;}
+.EPFileLoadingBg{ background-color:#00d4db; height:12px; float:left;}
+.EPFileLoadingNumber{ position:absolute; width:100%; left:0; top:0; height:12px; color:#F00; font-size:10px;}
+.EPFileLoadingState01{ color:#090;}
+.EPFileLoadingState02{ color:#F00;}
+.EPActivityTitle{ font-size:14px; line-height:30px; font-weight:bold;}
+/*接收单位*/
+.EPUnit{ padding:10px 0;}
+.EPUnit a{ line-height:30px; padding:0px 10px; border:1px solid #d6d6d6; float:left; display:block; margin:5px;}
+.EPUnit a:hover{ border-color:#a6d0ff; background-color:#eef6ff;}
+.EPUnit .EPUnitBtn_on{ background:url(../images/EmphasisPersonnel/ClueSort_on.png) no-repeat right bottom; border-color:#a6d0ff;}
+/*示意图绘制*/
+.EPMapping{ width:100%;background:url(../images/EmphasisPersonnel/map.png); position:relative;}
+.EPMapping_r{ position:absolute; right:0; top:0; width:180px; height:100%; border-left:1px solid #ccc; background-color:rgba(255,255,255,1); /*box-shadow: -2px 0px 3px rgba(0, 0, 0, 0.2);*/ }
+/*勘测图绘制*/
+.SurveyMap_l{ height:100%; margin-right:131px;}
+.SurveyMap_r{ height:100%; width:130px; position:absolute; border-left:1px solid #cdcdcd; right:0; top:0;}
+.SurveyMapButBox{ height:30px; background-color:#333; border-bottom:1px solid #222; text-align:center;}
+.SurveyMapButBox a{ display:inline-block; width:30px; height:30px; background-position:center center;}
+.SurveyMapButBox a:hover,.EPMappingBut06_on,.EPMappingBut07_on{ background-color:#fff;}
+.EPMappingBut01{ background-image:url(../images/kct/kctNav01.png);}
+.EPMappingBut01:hover{ background-image:url(../images/kct/kctNav01_on.png);}
+.EPMappingBut02{ background-image:url(../images/kct/kctNav02.png);}
+.EPMappingBut02:hover{ background-image:url(../images/kct/kctNav02_on.png);}
+.EPMappingBut03{ background-image:url(../images/kct/kctNav03.png);}
+.EPMappingBut03:hover{ background-image:url(../images/kct/kctNav03_on.png);}
+.EPMappingBut04{ background-image:url(../images/kct/kctNav04.png);}
+.EPMappingBut04:hover{ background-image:url(../images/kct/kctNav04_on.png);}
+.EPMappingBut05{ background-image:url(../images/kct/kctNav05.png);}
+.EPMappingBut05:hover{ background-image:url(../images/kct/kctNav05_on.png);}
+.EPMappingBut06{ background-image:url(../images/kct/kctNav06.png);}
+.EPMappingBut06:hover,.EPMappingBut06_on{ background-image:url(../images/kct/kctNav06_on.png);}
+.EPMappingBut07{ background-image:url(../images/kct/kctNav07.png);}
+.EPMappingBut07:hover,.EPMappingBut07_on{ background-image:url(../images/kct/kctNav07_on.png);}
+.EPMappingBut08{ background-image:url(../images/kct/kctNav08.png);}
+.EPMappingBut08:hover{ background-image:url(../images/kct/kctNav08_on.png);}
+.EPMappingOperation{ width:100#;}
+.EPMappingOperation h1{ font-size:12px; line-height:30px; text-indent:10px; color:#656565;}
+.EPMappingOperation h2{ font-size:12px; font-weight:normal; line-height:30px; text-indent:10px; color:#bebebe;}
+.EPMappingIconBox,.EPMappingLegendBox,.EPMappingDirectionBox,.EPMappingToolBox{ width:152px; margin:0 auto;}
+.EPMappingIconBox a,.EPMappingLegendBox a,.EPMappingDirectionBox a,.EPMappingDirectionBox02 a,.EPMappingToolBox a{ display:block; float:left; width:34px; height:34px; margin:2px;}/*2016.1.28*/
+.EPMappingIconBox a:hover,.EPMappingLegendBox a:hover,.EPMappingDirectionBox a:hover,.EPMappingToolBox a:hover{ /*border-color:#ff4500;*/}/*2016.1.28*/
+.EPMappingIconNav01{ background-image:url(../images/kct/Icon01.png);}
+.EPMappingIconNav01:hover,.EPMappingIconNav01_on{ background-image:url(../images/kct/Icon01_on.png);}
+.EPMappingIconNav02{ background-image:url(../images/kct/Icon02.png);}
+.EPMappingIconNav02:hover,.EPMappingIconNav02_on{ background-image:url(../images/kct/Icon02_on.png);}
+.EPMappingIconNav03{ background-image:url(../images/kct/Icon03.png);}
+.EPMappingIconNav03:hover,.EPMappingIconNav03_on{ background-image:url(../images/kct/Icon03_on.png);}
+.EPMappingIconNav04{ background-image:url(../images/kct/Icon04.png);}
+.EPMappingIconNav04:hover,.EPMappingIconNav04_on{ background-image:url(../images/kct/Icon04_on.png);}
+.EPMappingIconNav05{ background-image:url(../images/kct/Icon05.png);}
+.EPMappingIconNav05:hover,.EPMappingIconNav05_on{ background-image:url(../images/kct/Icon05_on.png);}
+.EPMappingIconNav06{ background-image:url(../images/kct/Icon06.png);}
+.EPMappingIconNav06:hover,.EPMappingIconNav06_on{ background-image:url(../images/kct/Icon06_on.png);}
+.EPMappingLegendNav01{ background-image:url(../images/kct/Legend01.png);}
+.EPMappingLegendNav01:hover,.EPMappingLegendNav01_on{ background-image:url(../images/kct/Legend01_on.png);}
+.EPMappingLegendNav02{ background-image:url(../images/kct/Legend02.png);}
+.EPMappingLegendNav02:hover,.EPMappingLegendNav02_on{ background-image:url(../images/kct/Legend02_on.png);}
+.EPMappingLegendNav03{ background-image:url(../images/kct/Legend03.png);}
+.EPMappingLegendNav03:hover,.EPMappingLegendNav03_on{ background-image:url(../images/kct/Legend03_on.png);}
+.EPMappingLegendNav04{ background-image:url(../images/kct/Legend04.png);}
+.EPMappingLegendNav04:hover,.EPMappingLegendNav04_on{ background-image:url(../images/kct/Legend04_on.png);}
+.EPMappingDirectionNav01{ background-image:url(../images/kct/Direction01.png);}
+.EPMappingDirectionNav01:hover,.EPMappingDirectionNav01_on{ background-image:url(../images/kct/Direction01_on.png);}
+.EPMappingDirectionNav02{ background-image:url(../images/kct/Direction02.png);}
+.EPMappingDirectionNav02:hover,.EPMappingDirectionNav02_on{ background-image:url(../images/kct/Direction02_on.png);}
+.EPMappingDirectionNav03{ background-image:url(../images/kct/Direction03.png);}
+.EPMappingDirectionNav03:hover,.EPMappingDirectionNav03_on{ background-image:url(../images/kct/Direction03_on.png);}
+.EPMappingDirectionNav04{ background-image:url(../images/kct/Direction04.png);}
+.EPMappingDirectionNav04:hover,.EPMappingDirectionNav04_on{ background-image:url(../images/kct/Direction04_on.png);}
+.EPMappingDirectionNav05{ background-image:url(../images/kct/Direction05.png);}
+.EPMappingDirectionNav05:hover,.EPMappingDirectionNav05_on{ background-image:url(../images/kct/Direction05_on.png);}
+.EPMappingDirectionNav06{ background-image:url(../images/kct/Direction06.png);}
+.EPMappingDirectionNav06:hover,.EPMappingDirectionNav06_on{ background-image:url(../images/kct/Direction06_on.png);}
+.EPMappingDirectionNav07{ background-image:url(../images/kct/Direction07.png);}
+.EPMappingDirectionNav07:hover,.EPMappingDirectionNav07_on{ background-image:url(../images/kct/Direction07_on.png);}
+.EPMappingDirectionNav08{ background-image:url(../images/kct/Direction08.png);}
+.EPMappingDirectionNav08:hover,.EPMappingDirectionNav08_on{ background-image:url(../images/kct/Direction08_on.png);}
+.EPMappingAngle{ width:140px; height:4px; background-color:#333; position:relative; margin:10px 0 10px 10px;}
+.EPMappingAngleBut{ width:9px; height:20px; position:absolute; left:0; top:-7px; background-image:url(../images/kct/jdBut.png);}
+.EPMappingAnglePrice{ position:absolute; right:-40px; top:-10px; line-height:20px; width:40px; text-align:center;}
+.EPMappingToolNav01{ background-image:url(../images/kct/Tool01.png);}
+.EPMappingToolNav01:hover,.EPMappingToolNav01_on{ background-image:url(../images/kct/Tool01_on.png);}
+.EPMappingToolNav02{ background-image:url(../images/kct/Tool02.png);}
+.EPMappingToolNav02:hover,.EPMappingToolNav02_on{ background-image:url(../images/kct/Tool02_on.png);}
+.EPMappingToolNav03{ background-image:url(../images/kct/Tool03.png);}
+.EPMappingToolNav03:hover,.EPMappingToolNav03_on{ background-image:url(../images/kct/Tool03_on.png);}
+.EPMappingToolNav04{ background-image:url(../images/kct/Tool04.png);}
+.EPMappingToolNav04:hover,.EPMappingToolNav04_on{ background-image:url(../images/kct/Tool04_on.png);}
+.EPMappingToolNav05{ background-image:url(../images/kct/Tool05.png);}
+.EPMappingToolNav05:hover,.EPMappingToolNav05_on{ background-image:url(../images/kct/Tool05_on.png);}
+.EPMappingToolNav06{ background-image:url(../images/kct/Tool06.png);}
+.EPMappingToolNav06:hover,.EPMappingToolNav06_on{ background-image:url(../images/kct/Tool06_on.png);}
+.EPMappingToolNav07{ background-image:url(../images/kct/Tool07.png);}
+.EPMappingToolNav07:hover,.EPMappingToolNav07_on{ background-image:url(../images/kct/Tool07_on.png);}
+.EPMappingTextarea{ width:160px; height:50px; line-height:20px; font-size:12px; border:1px solid #222; background-color:#333; margin-left:10px; padding:5px; color:#fff;}
+.EPMappingSelect{ border:1px solid #cdcdcd; background-color:#fff; color:#333; width:170px; height:20px; line-height:20px; font-size:12px; margin-left:10px;}
+.EPMappingColor{ position:absolute; left:5px; top:-90px; background-color:#fafafa; padding:3px; border:1px solid #cdcdcd; width:112px; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);}
+.EPMappingColor a{ display:block; width:22px; height:22px; float:left; margin:3px;}
+.EPMappingColor01{ background-color:#fff;}
+.EPMappingColor02{ background-color:#CCC;}
+.EPMappingColor03{ background-color:#F00;}
+.EPMappingColor04{ background-color:#FF0;}
+.EPMappingColor05{ background-color:#0F0;}
+.EPMappingColor06{ background-color:#00F;}
+.EPMappingColor07{ background-color:#F0F;}
+.EPMappingColor08{ background-color:#000;}
+.EPMappingColor09{ background-color:#0FF;}
+.EPMappingColor10{ background-color:#6CF;}
+.EPMappingColor .EPMappingColor_on{ width:47px; height:47px; background-color:#000;}
+.EPMappingColor_l{ float:left; width:125px;}
+.EPMappingColorBox02{ padding:10px; position:relative;}
+.EPMappingColorBox02_title{ float:left; line-height:22px; width:70px; text-align:left;}
+.EPMappingColorCurrent{ width:20px; height:20px; border:1px solid #999; float:left; cursor:pointer; }
+.EPMappingColor_on{width:20px; height:20px; border:1px solid #fff; float:left; cursor:pointer;background-color:#000;}
+.EPMappingColor01_on{width:20px; height:20px; border:1px solid #fff; float:left; cursor:pointer; background-color:#fff;}
+.EPMappingColor02_on{width:20px; height:20px; border:1px solid #fff; float:left; cursor:pointer; background-color:#CCC;}
+.EPMappingColor03_on{width:20px; height:20px; border:1px solid #fff; float:left; cursor:pointer; background-color:#F00;}
+.EPMappingColor04_on{width:20px; height:20px; border:1px solid #fff; float:left; cursor:pointer; background-color:#FF0;}
+.EPMappingColor05_on{width:20px; height:20px; border:1px solid #fff; float:left; cursor:pointer; background-color:#0F0;}
+.EPMappingColor06_on{width:20px; height:20px; border:1px solid #fff; float:left; cursor:pointer; background-color:#00F;}
+.EPMappingColor07_on{width:20px; height:20px; border:1px solid #fff; float:left; cursor:pointer; background-color:#F0F;}
+.EPMappingColor08_on{width:20px; height:20px; border:1px solid #fff; float:left; cursor:pointer; background-color:#000;}
+.EPMappingColor09_on{width:20px; height:20px; border:1px solid #fff; float:left; cursor:pointer; background-color:#6FF;}
+.EPMappingColor10_on{width:20px; height:20px; border:1px solid #fff; float:left; cursor:pointer; background-color:#6CF;}
+.EPMappingDirectionBox02{ position:absolute; width:88px; left:0; top:0; z-index:2; background-color:#fff; border:1px solid #cdcdcd;  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);}
+.EPMappingDirectionBox02 P{ line-height:22px; color:#fff; text-align:center; border-bottom:1px solid #2a86f3; background-color:#2a86f3;}
+/*我的关注右侧菜单*/
+.AttentionNav01,.AttentionNav02,.AttentionNav03,.AttentionNav04,.AttentionNav05,.AttentionNav01_on,.AttentionNav02_on,.AttentionNav03_on,.AttentionNav04_on,.AttentionNav05_on{ display:block; margin:0 0px 5px; line-height:35px; font-size:14px; color:#333; position:relative; padding:3px 8px; border:1px solid #fff;}
+.AttentionNav01 span,.AttentionNav02 span,.AttentionNav03 span,.AttentionNav04 span,.AttentionNav05 span,.AttentionNav01_on span,.AttentionNav02_on span,.AttentionNav03_on span,.AttentionNav04_on span,.AttentionNav05_on span{ display:block; width:35px; height:35px; background-image:url(../images/EmphasisPersonnel/AttentionIcon.png); float:left; margin-right:10px;}
+.AttentionNav01:hover,.AttentionNav02:hover,.AttentionNav03:hover,.AttentionNav04:hover,.AttentionNav05:hover{ color:#1361b7; background-color:#f5faff; border:1px solid #c5e4ff; border-radius:3px;}
+.AttentionNav01_on,.AttentionNav02_on,.AttentionNav03_on,.AttentionNav04_on,.AttentionNav05_on{ color:#1361b7;}
+.AttentionNav01:hover span,.AttentionNav01_on span{ background-position:0 -35px;}
+.AttentionNav02 span{ background-position:-35px 0;}
+.AttentionNav02:hover span,.AttentionNav02_on span{ background-position:-35px -35px;}
+.AttentionNav03 span{ background-position:-70px 0;}
+.AttentionNav03:hover span,.AttentionNav03_on span{ background-position:-70px -35px;}
+.AttentionNav04 span{ background-position:-105px 0;}
+.AttentionNav04:hover span,.AttentionNav04_on span{ background-position:-105px -35px;}
+.AttentionNav05 span{ background-position:-140px 0;}
+.AttentionNav05:hover span,.AttentionNav05_on span{ background-position:-140px -35px;}
+.AttentionNew{ width:16px; height:16px; position:absolute; right:8px; top:8px; background-color:#F00; text-align:center; font-size:12px; color:#fff; border-radius:30px;/*圆角*/box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); line-height:16px; overflow: hidden; text-overflow: ellipsis; white-space:nowrap; padding:3px;}
+/*重点活动安保详情*/
+.EPActivityDetailsBox{ position:absolute; left:15px; top:15px; width:250px; z-index:1; background-color:#fff; border-radius:3px;/*圆角*/box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1); border:1px solid #ccc; padding:10px;}
+.EPActivityDetails{ padding:10px; height:300px; overflow:hidden;}
+.EPActivityDetails h1{ color:#333; font-size:14px; line-height:20px; margin-bottom:5px;}
+.EPADetailsTitle{ color:#276795; font-size:12px; line-height:20px; margin-bottom:5px; word-wrap:break-word; width:100%;}
+.EPADetailsTitle span{ color:#555;}
+.EPADetailsContent{ line-height:20px; font-size:12px; width:100%; color:#555; word-break:break-all;}
+.EPActivityDetailsClose{ background:url(../images/EmphasisPersonnel/NotepadBut2.png) -20px 0; position:absolute; right:5px; top:5px; width:20px; height:20px; display:block;}
+.EPActivityDetailsClose:hover{ background-position:-20px -20px;}
+.EPADTab{ border-bottom:1px solid #ccc; height:26px;}
+.EPADTabBtn,.EPADTabBtn_on{ display:block; min-width:40px; text-align:center; line-height:24px; border:1px solid #ccc; float:left; margin-right:5px; position:relative; bottom:-1px; padding:0 10px; background-color:#fafafa;}
+.EPADTabBtn:hover{ border-color:#84bdff; background-color:#f7fbff; color:#1361b7;}
+.EPADTabBtn_on,.EPADTabBtn_on:hover{ border-bottom-color:#fff; color:#276795; background-color:#fff;}
+.EPADBtnbox{ margin-top:15px; padding-left:46px;}
+.EPADCameraBox{ padding:10px 0px; height:300px; overflow:hidden;}
+.EPADCameraList{ display:block; line-height:20px; overflow: hidden; text-overflow: ellipsis; white-space:nowrap; padding-right:50px; padding:5px 10px;}
+.EPADCameraList:hover{ background-color:#d6ecff; color:#1361b7;}
+.EPADCameraList img{ float:left; margin-right:5px;}
+.EPADClose,.EPADOpen{ background:#fff url(../images/EmphasisPersonnel/ArrowL.png) no-repeat center center; width:14px; height:40px; position:absolute; top:160px; right:-15px; box-shadow:3px 3px 2px rgba(0,0,0,0.3); border-radius:0px 3px 3px 0px; border:1px solid #ccc; border-left-width:0;}
+.EPADClose:hover{ background-image:url(../images/EmphasisPersonnel/ArrowL_on.png);}
+.EPADOpen{ background:#fff url(../images/EmphasisPersonnel/ArrowR.png) no-repeat center center;}
+.EPADOpen:hover{ background-image:url(../images/EmphasisPersonnel/ArrowR_on.png);}
+/*同比分析下拉菜单*/
+.EPTextSelect{ position:absolute; top:31px; left:95px; width:280px; padding:10px 10px; border:1px solid #ccc; min-height:100px; background-color:#fff; z-index:2; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);}
+.EPTextSelectTitle{ font-weight:bold; color:#333; padding:5px;}
+.EPTextSelectExplain{ padding:0 5px; line-height:20px; color:#F00;}
+/*同比分析下拉菜单*/
+.EPTextSelect{ position:absolute; top:31px; left:95px; width:280px; padding:10px 10px; border:1px solid #ccc; min-height:100px; background-color:#fff; z-index:2; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);}
+.EPTextSelectTitle{ font-weight:bold; color:#333; padding:5px;}
+.EPTextSelectExplain{ padding:0 5px; line-height:20px; color:#F00;}
+.EPTextSelect a{ float:none;}
+/*每日研判、战时研判*/
+.EPAccessory{ width:250px; display:inline-block; line-height:24px;}
+.EPAccessoryTitle{ overflow: hidden; text-overflow: ellipsis; white-space:nowrap; color:#008aff; display:block; max-width:200px; float:left;}
+.EPAccessoryTitle:hover{ color:#1364b7;}
+.EPAccessoryNav{ display:block; color:#090; float:left; margin-left:10px;}
+.EPAccessoryNav:hover{ color:#030;}
+.EPAccessoryTT{ line-height:24px; float:left;}
+.EPSecondBox{  border-top:1px dashed #ccc; margin:10px 10px 0;}
+.EPSecond{ position:relative; padding:10px; border:1px solid #e3e3e3; margin-top:10px;}
+.EPTabnav,.EPTabnav_on{ line-height:26px; display:block; float:left; padding:0 10px; background-color:#fff; color:#666; border-radius:3px;/*圆角*/}
+.EPTabnav:hover{ color:#0066cc;}
+.EPTabnav_on,.EPTabnav_on:hover{ background-color:#007ce4; color:#fff;}
+.EPTabContent_ja{ padding-top:5px;}
+/*2016.9.29*/
+.EPTable03{ font-size:12px;}
+.EPTableTitle02{ font-size:18px; margin:15px 0; font-weight:bold;}
+.EPTable03 .EPTable_l{ text-align:left;}
+.EPTableAccessory{ width:300px; padding:5px 10px;}
+.EPTableAccessory a{ display:block; line-height:24px; color:#008aff; overflow: hidden; text-overflow: ellipsis; white-space:nowrap; padding-right:70px; position:relative;}
+.EPTableAccessory a:hover{ color:#1364b7;}
+.EPTableAccessory span{ position:absolute; top:0; right:0; line-height:24px; display:block; cursor:pointer; color: #093;}
+.EPTableAccessory span:hover{ color: #030; text-decoration:underline;}
+/*2016.10.11*/
+.EPSort_title{ font-size:14px; font-weight:bold; margin-bottom:15px; background:url(../images/EmphasisPersonnel/title_ico.png) no-repeat left 5px; line-height:18px; color:#333; border-bottom:1px dotted #ccc; padding:5px 0 8px 12px;}
+.EPIndexShow{ width:44px; height:44px; background-image:url(../images/EmphasisPersonnel/IndexShow.png); position:absolute; right:0; bottom:0; z-index:2;}
+
+
+
+/*----智能搜索------*/
+.IntelligenceSearchBox{ width:805px; margin:30px auto 16px; height:56px;}/*2016.12.26下午*/
+.ISLogo{ width:187px; height:56px;  background-image:url(../images/EmphasisPersonnel/EPSearchLogo.png); float:left; margin-right:15px;}
+.ISTextBox{ float:left; width:420px; border:2px solid #2a86f3; height:32px; border-radius:5px;/*圆角*/box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1); position:relative; top:5px;}/*2016.12.26下午*/
+.ISInput{ outline:none; height:30px; font:16px/30px "微软雅黑",Arial, Helvetica, sans-serif; width:400px; border:1px solid #fff; margin-left:0px; padding-left:10px; color:#999;}/*2016.12.26下午*/
+.ISBtn,.ISBtn02{ background-image:url(../images/EmphasisPersonnel/EPSearchBtn02.png); width:80px; height:30px; display:block; position:absolute; right:-99px; top:1px;}/*2016.12.26下午*/
+.ISBtn:hover{ background-position:0 -30px;}
+.ISBtn02{ background-image:url(../images/EmphasisPersonnel/EPSearchBtn03.png); right:-197px;}/*2016.12.26下午*/
+.ISBtn02:hover{ background-position:0 -30px;}/*2016.12.26下午*/
+.ISTab{ background-color:#e4f1ff; height:38px; border-top:1px solid #cfe2f7; padding:0 30px;}
+.ISTab a{ display:block; float:left; padding:0 15px; line-height:36px; font-size:14px; border-bottom:2px solid #e4f1ff;}
+.ISTab a:hover,.ISTab .ISTabNav_on{ border-bottom-color:#84b7ff; color:#006aff;}
+.ISTab .ISTabNav_on{ border-bottom-color:#3388ff;}
+.ISResult_l{ width:800px; padding:10px 30px; float:left;}
+.ISResultList{ position:relative; margin-bottom:15px; min-height:80px;}
+.ISResultListImg{ border-radius:60px;/*圆角*/ width:60px; height:60px; overflow:hidden; position:absolute; top:10px; left:0; background-color:#d2e7ff;}
+.ISResultList_r{ margin-left:75px;}
+.ISResultListTitle{ color:#1361b7; font-size:medium; line-height:20px; margin-bottom:5px; display:block; overflow: hidden; text-overflow: ellipsis; white-space:nowrap;}
+.ISResultListTitle:hover{ color:#002550; text-decoration:underline;}
+.ISResultList_r p{ line-height:20px; font-size:13px;  overflow: hidden; text-overflow: ellipsis; white-space:nowrap;}
+.EPPage{ padding:15px 0;}
+.ISResultHint{ color:#999; line-height:22px; margin-bottom:15px;}
+.ISResultHint span{ color:#FF0000; font-weight:bold; margin:0 5px;}
+.ISResult_r{ float:left; width:300px; height:100%; border-left:1px solid #e3e3e3; padding:0 20px;}
+.ISRTitle{ color:#333; line-height:20px; margin:10px 0 5px;}
+.ISRList a{ display:block; line-height:30px; color:#1361b7; text-decoration:underline; float:left; width:80px; margin-right:15px; overflow: hidden; text-overflow: ellipsis; white-space:nowrap;}
+/*----数据视图----*/
+.EPContent02{ padding:8px;}
+.EPPlate{ width:460px; height:360px; background-color:#fff; border-radius:0px;/*圆角*/box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); float:left; margin:8px;}
+.EPPlateHeader{ height:34px; background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(218,235,254,1)), to(rgba(255,255,255,1))); position:relative; top:1px;}
+.EPPlateTitle01,.EPPlateTitle02{ background-image:url(../images/EmphasisPersonnel/EPTitleBg.png); width:101px; height:30px; position:relative; top:3px; margin-left:4px; color:#fff; font-size:16px; line-height:30px; text-indent: 15px;}
+.EPPlateTitle02{ background-image:url(../images/EmphasisPersonnel/EPTitleBg02.png); width:131px;}
+.EPPlateOption{ position:absolute; right:40px; top:4px;}
+.EPPlateOption a{ display:block; padding:1px 10px; line-height:24px; float:left; color:#0057b1; font-size:14px; margin:0 2px;}
+.EPPlateOption a:hover,.EPPlateOption .EPPlateOption_on{ color:#2ec7c9; border:1px solid #2ec7c9; padding:0 9px;}
+.EPPlateOption .EPPlateOption_on{ background:url(../images/EmphasisPersonnel/EPChoose.png) no-repeat right bottom;}
+.EPPlateChart{ margin:10px 15px; /*background-color:#eef7ff;*/position:relative;}
+.EPPlateChartTitle{ position:absolute;bottom:2px;left:0px;width:100%;font-size:15px; color:#666; text-align:center; margin-top:10px; font-weight:bold; overflow: hidden; text-overflow: ellipsis; white-space:nowrap;}
+.EPPlateChart02{ float:left;}
+.EPPlateTab a,.EPPlateTab02 a{ background-image:url(../images/EmphasisPersonnel/EPTitleBg03.png); width:101px; height:30px; position:relative; top:3px; margin-left:4px; color:#0057b1; font-size:16px; line-height:30px; text-indent: 15px; display:block; float:left;}
+.EPPlateTab02 a{ background-image:url(../images/EmphasisPersonnel/EPTitleBg04.png); width:131px;}
+.EPPlateTab a:hover,.EPPlateTab .EPPlateTab_on,.EPPlateTab .EPPlateTab_on:hover{  background-image:url(../images/EmphasisPersonnel/EPTitleBg.png); color:#fff;}
+.EPPlateTab02 a:hover,.EPPlateTab02 .EPPlateTab_on,.EPPlateTab02 .EPPlateTab_on:hover{ background-image:url(../images/EmphasisPersonnel/EPTitleBg02.png); color:#fff;}
+.EPPlateBtnBox{ position:absolute; right:10px; top:8px;}
+.EPPlateBtn01,.EPPlateBtn02,.EPPlateBtn03,.EPPlateBtn04{ display:block; width:18px; height:18px; background-image:url(../images/EmphasisPersonnel/EPTitleBtn.png); float:left; margin-left:10px;}
+.EPPlateBtn02{ background-position:-18px 0;}
+.EPPlateBtn03{ background-position:-36px 0;}
+.EPPlateBtn04{ background-position:-54px 0;}
+.EPPlateBtn01:hover{ background-position:0 -18px;}
+.EPPlateBtn02:hover{ background-position:-18px -18px;}
+.EPPlateBtn03:hover{ background-position:-36px -18px;}
+.EPPlateBtn04:hover{ background-position:-54px -18px;}
+.EPPlateBack{ display:block; width:30px; height:30px; position:absolute; right:0; top:0; background-image:url(../images/EmphasisPersonnel/Back02.png);}
+.EPPlateBack:hover{ background-position:0 -30px;}
+/*首页*/
+.IndexBodyBg{ background-color:#003176;}
+.EPIndexSearchBox{ width:691px; margin:30px auto 15px;}
+.EPIndexSearch{ border:1px solid #34a1ff; height:34px; width:500px; background-color:#1054a0;  border-radius:3px;/*圆角*/box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2); position:relative; }
+.EPSearchInput{ height:32px; font:16px/32px "微软雅黑",Arial, Helvetica, sans-serif; width:480px; border:1px solid #1054a0; margin-left:0px; color:#fff; padding-left:10px; border-radius:3px; outline:none; background-color:#1054a0;}
+.EPIndexSearchBtn,.EPIndexSearchBtn02{ background-image:url(../images/EmphasisPersonnel/EPSearchBtn02.png); width:80px; height:30px; display:block; position:absolute; right:-99px; top:2px;}
+.EPIndexSearchBtn02{ background-image:url(../images/EmphasisPersonnel/EPSearchBtn03.png); right:-190px;}
+.EPIndexSearchBtn:hover,.EPIndexSearchBtn02:hover{ background-position:0 -30px;}
+.EPRadioBox { margin:10px 15px 0;}
+.EPRadioBox a{ display:block; line-height:18px; height:18px; background:url(../images/EmphasisPersonnel/EPRadio.png) no-repeat left top; text-indent:23px; float:left; margin-right:15px;}
+.EPRadioBox a:hover{ background-position:0 -18px;}
+.EPRadioBox .EPRadio_on,.EPRadioBox .EPRadio_on:hover{ background-position:0 -36px;}
+.EPPlateContent{ padding:0 15px;}
+.EPPlateList01 li,.EPPlateList02 li{ line-height:40px; position:relative; border-bottom:1px dotted #a5c8ed; height:40px; overflow:hidden;}
+.EPPlateListTitle{ font-size:14px; color:#333; overflow: hidden; text-overflow: ellipsis; white-space:nowrap; margin-right:400px; display:block;}
+.EPPlateList02 .EPPlateListTitle{ margin-right:100px;}
+.EPPlateListTitle:hover{ color:#0859ac; text-decoration:underline;}
+.EPPlateListName,.EPPlateListTime{ display:block; position:absolute; right:160px; top:0; color:#417dbb;overflow: hidden; text-overflow: ellipsis; white-space:nowrap;}
+.EPPlateListName{ right:260px; width:84px;}
+.EPPlateList02 .EPPlateListTime{ right:0;}
+.EPPlateListBtn{ position:absolute; right:0; top:6px;}
+.EPPlateListBtn a{ display:block; float:left; margin-left:10px; width:60px; height:26px; border:1px solid #0082cf; color:#fff; text-align:center; line-height:26px; background-image:url(../images/EmphasisPersonnel/EPBtn02.png);}
+.EPPlateListBtn a:hover{ background-position:0 -26px;}
+.EpAttentionList{ position:relative; min-height:62px; margin-top:5px; border-bottom:1px dotted #a5c8ed; padding-bottom:5px;}
+.EpAttention{ padding-top:5px;}
+.EpAttentionList_r{ margin-left:77px;}
+.EpAttentionListImg{ position:absolute; top:10px; left:0; width:62px; heigth:62px;}/*12.5*/
+.EpAttentionListName{ color:#0859ac; font-size:14px; overflow: hidden; text-overflow: ellipsis; white-space:nowrap; display:block; margin-bottom:5px;}
+.EpAttentionListName:hover{ color:#2ec7c9;}
+.EpAttentionList_r p{ overflow: hidden; text-overflow: ellipsis; white-space:nowrap; line-height:18px;}
+.EPIndexBubble{ border-radius:30px;/*圆角*/ width:22px; height:22px; overflow: hidden; text-overflow: ellipsis; white-space:nowrap; text-align:center; line-height:22px; position:absolute; right:0px; top:-10px; background-color:#F00; color:#fff; font-size:12px; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); text-indent:0;}
+.EPPlateListTitle img{ float:left; margin-right:5px; position:relative; top:11px;}
+/*分页面左侧二级*/
+.EpSubMenu{ padding-bottom:5px;}
+.EpSubMenu li{ color:#0b70ff; border:1px solid #fff; background-color:#fff; line-height:30px; text-align:center; margin:0 10px 10px; cursor:pointer; font-size:14px; position:relative; border-radius:5px;}
+.EpSubMenu li:hover{ background-color:#6eaaff; color:#fff;}
+.EpSubMenu .EpSubMenu_on,.EpSubMenu .EpSubMenu_on:hover{ background-color:#6eaaff; color:#fff;}
+.EPSort img{ position:absolute; left:10px; top:7px;}
+.EPSort02 a{ color:#fff; font-size:15px;}
+.EpSubMenu .EpSubThreeMenu,.EpSubMenu .EpSubThreeMenu:hover{ cursor:pointer; border-width:0; background:url(../images/EmphasisPersonnel/ThreeMenuLine.png) repeat-y 18px 0; position:relative; top:-10px; padding-top:5px; border-radius:0px;}
+.EpSubThreeMenu p{ color:#fff; font-size:13px; cursor:pointer; text-align:left; text-indent:35px; background:url(../images/EmphasisPersonnel/ThreeMenuQ.png) no-repeat 15px 11px;}
+.EpSubThreeMenu p:hover,.EpSubThreeMenu .EpSubThreeMenu_on{ color:#3ca0f4; font-weight:bold; background-image:url(../images/EmphasisPersonnel/ThreeMenuQ_on.png);}
+.EpSubThreeMenu .EpSubThreeMenu_on,.EpSubThreeMenu .EpSubThreeMenu_on:hover{ font-weight:bold; color:#34a1ff; background-image:url(../images/EmphasisPersonnel/ThreeMenuQ_on.png);}
+.EpSubMenu img{ width:16px; height:16px; position:absolute; left:10px; top:6px;}
+
+
+/*----警情研判报告----*/
+.EPReportBox{ width:634px; padding:80px; min-height:966px; border:1px solid #ccc; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15); margin:15px auto; background-color:#fff; color:#333; font:20px/40px "微软雅黑","宋体",Arial, Helvetica, sans-serif; position:relative;}
+.EPReportBox h1{ text-align:center; font-size:50px; color:#F00; font-weight:bold; font-family:"宋体"; line-height:60px;}
+.EPReportBox h2{ text-align:center; font-size:30px; padding:40px 0; font-weight:normal;}
+.EPReportBox h3{ text-align:left; font-size:26px; font-weight:normal;}
+.EPReportBox h4{ text-align:left; font-size:20px; text-indent:40px;}
+.EPReportBox h5{ text-align:center; font-size:18px; text-indent:40px; margin-bottom:10px;}
+.EPReportTime{ text-align:center; font-size:20px; color:#F00; font-family:"宋体"; line-height:40px; padding:10px 0; font-weight:bold;}
+.EPReportSector{ font-size:20px; font-family:"宋体"; border-bottom:3px solid #F00; padding:5px 0; position:relative; margin-top:15px;}
+.EPReportSector span{ display:block; position:absolute; right:0; bottom:5px;}
+.EPReportUl01 li{ list-style-type:square; padding-left:10px; margin-left:20px;}
+.EPReportBox p{ text-indent:40px;}
+.EPOutstanding{ color:#F00; font-weight:bold; margin:0 5px;}
+.EPReportChart{}
+.EPReportPageNumber{ text-align:center; line-height:20px; font-size:14px; position:absolute; bottom:80px; left:0; width:100%;}
+.EPReportFooter{ position:absolute; bottom:120px; left:80px; right:80px; text-align:center; line-height:20px; font-size:16px; border-top:1px solid #999; padding:5px 0;}
+.EPRFooterName01{ position:absolute; left:0; top:5px; display:block;}
+.EPRFooterName02{ position:absolute; right:0; top:5px; display:block;}
+.EPReportMenu{ border-radius:3px;/*圆角*/box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15); background-color:#fff; width:40px; padding:5px 10px; position:absolute; right:20px; top:88px; z-index:1; border:1px solid #ccc;}
+.EPReportNav01,.EPReportNav02{ display:block; text-align:center; padding:5px 0;}
+.EPReportNav01:hover,.EPReportNav02:hover{ color:#2a86f3;}
+.EPReportNavImg{ width:34px; height:34px; background-image:url(../images/EmphasisPersonnel/ReportMenu.png); margin:0 auto 5px;}
+.EPReportNav02 .EPReportNavImg{ background-position:-34px 0;}
+.EPReportNav01:hover .EPReportNavImg{ background-position:0 -34px;}
+.EPReportNav02:hover .EPReportNavImg{ background-position:-34px -34px;}
+/*预警信息分类导航*/
+.EPClueSortBox{ padding:5px 100px 5px 10px; position:relative;}
+.EPClueSort,.EPClueSort_on{ display:block; border:1px solid #e3e3e3; float:left; padding:0px 10px; margin:5px; line-height:28px; background-color:#f3f3f3;}
+.EPClueSort:hover{ border-color:#0f7af2; color:#0f7af2; background-color:#fff;}
+.EPClueSort_on,.EPClueSort_on:hover{ border-color:#0f7af2; color:#0f7af2; background-color:#e6f2ff;}
+.EPClueSort span,.EPClueSort_on span{ color:#F00;}
+.EPMarkerBtn{ display:block;  position:absolute; right:10px; top:10px; background:url(../images/EmphasisPersonnel/EPBtn.png) no-repeat right top; padding-right:25px; line-height:20px; color:#333;}
+.EPMarkerBtn:hover{ background-position:right -20px; color:#0f7af2; }
+
+.EPSetTable,.EPSetTable th, .EPSetTable td{ border: 0px solid #e3e3e3; height:34px;}/*2016.12.24*/
+
+/*快捷菜单*/
+.EPQuickMenu{ border:1px solid #ccc; border-radius:3px;/*圆角*/ padding:10px 15px; background-color:#fff; position: absolute; top:45px; right:10px; min-height:84px; width:240px; cursor:pointer; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);    z-index: 1;}
+.EPQuickMenuBtn{ display:block; width:60px; text-align:center; float:left; padding:5px; margin:5px; border-radius:3px;/*圆角*/ }
+.EPQuickMenuBtn img{ margin-bottom:5px;}
+.EPQuickMenuBtn p{ overflow: hidden; text-overflow: ellipsis; white-space:nowrap;}
+.EPQuickMenuBtn:hover{ border:1px solid #0cf; padding:4px; color:#3aa0f5; background-color:#e3fcff;}
+.EPQuickMenu02 { height:40px; padding:5px 10px; border-bottom: 1px solid #e3e3e3; /*background-color:#f5faff; */text-align:right; position:relative;}/*2016.1.27*/
+.EPQuickMenu02Btn img,.EPQuickMenu02Btn_no img{ float:left; margin-right:5px;}/*2016.1.27*/
+.EPQuickMenu02Btn,.EPQuickMenu02Btn_no{ display:inline-block; line-height:30px; border: 0px solid #ccc; border-radius: 3px; padding:3px; margin:0px; font-size:12px;}/*2016.1.27*/
+.EPQuickMenu02Btn:hover{ color:#3aa0f5; border:1px solid #0cf; padding:2px; color:#3aa0f5; background-color:#e3fcff;}
+.EPQuickMenu02Btn_no,.EPQuickMenu02Btn_no:hover{ color:#ccc; border-width:0; cursor:default; padding:5px; background-color:#fff;}
+.EPQuickMore{ display:block; float:right; line-height:16px; color:#fff; background-color:#017ce4; border-radius:30px; padding:7px 10px; margin-top:5px; margin-left:10px;}
+.EPQuickMore:hover{ color:#fff; background-color:#3ca0f4;}
+.EPQuickMore img{ float:left; margin-right:5px;}
+/*首页新增导出按钮*/
+.EPPBtnBox{ position:absolute; right:40px; top:8px;}
+.EPPBtn01,.EPPBtn02{ display:block; float:left; line-height:20px; margin-left:10px;}
+.EPPBtn01 span,.EPPBtn02 span{ width:20px; height:20px; display:block; float:left; background:url(../images/EmphasisPersonnel/EPTitleBtn.png) no-repeat -36px 0; margin-right:3px;}
+.EPPBtn02 span{ background-position:-54px 0;}
+.EPPBtn01:hover span{ background-position:-36px -18px;}
+.EPPBtn02:hover span{ background-position:-54px -18px;}
+.EPPBtn01:hover,.EPPBtn02:hover{ color:#00baff;}
+/*轨迹切换按钮*/
+.EPTrajectoryBtnBox{ position:absolute; right:40px; top:0px; }
+.EPTrajectoryBtn01,.EPTrajectoryBtn02,.EPTrajectoryBtn01_on,.EPTrajectoryBtn02_on{ display:block; float:left; line-height:26px;font-weight:normal; background-color:#fff; font-size:12px; padding:0 5px;}
+.EPTrajectoryBtn01 span,.EPTrajectoryBtn02 span,.EPTrajectoryBtn01_on span,.EPTrajectoryBtn02_on span{ width:30px; height:26px; display:block; float:left; background:url(../images/EmphasisPersonnel/EPShowChange.png) no-repeat 0 0; margin-right:5px;}
+.EPTrajectoryBtn02 span{ background-position:-30px 0;}
+.EPTrajectoryBtn01:hover span,.EPTrajectoryBtn01_on span{ background-position:0px -26px;}
+.EPTrajectoryBtn02:hover span,.EPTrajectoryBtn02_on span{ background-position:-30px -26px;}
+.EPTrajectoryBtn01:hover,.EPTrajectoryBtn02:hover,.EPTrajectoryBtn01_on,.EPTrajectoryBtn01_on:hover,.EPTrajectoryBtn02_on,.EPTrajectoryBtn02_on:hover{ color:#0078ff;}
+
+/*----黄陂大屏-----*/
+.HPBody{ background:url(../images/index_ja/bj.jpg) repeat center top;}
+.HPHeader{ background:url(../images/EmphasisPersonnel/HPHeaderbg.png) repeat-x; height:32px; position: relative;}
+.HPDate{ display:block; float:left; line-height:30px; color:#fff; margin-left:10px;}
+.HPDate span{ color:#FFFF00; font-weight:bold;}
+.HPLogo{ background:url(../images/EmphasisPersonnel/HPLogobg.png) no-repeat left 0px; width:408px; height:32px; margin:0 auto; text-align:center; line-height:32px; font-size:20px; font-weight:bold; color:#fff;}
+.HPContent{ padding:15px 5px 5px 15px;}
+.HPPlate{ width:500px; border:1px solid #5ddbff; /*background-color:#0065c7; background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0,172,248,1)), to(rgba(0,101,199,1)));背景渐变*/ margin:0 10px 10px 0px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); position:relative;}
+.HPPlateTitle{ height:34px; background:url(../images/EmphasisPersonnel/HPPlateTitlebg.png) repeat-x; border-bottom:1px solid rgba(0,85,134,0.6); position:relative;}
+.HPPlateTitle h1{ font-size:15px; color:#fff; text-indent:10px; line-height:34px; font-weight:blod;}
+.HPPlateContent{ /*background-color:#fff; background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,1)), to(rgba(196,231,255,1)));背景渐变*/ margin:5px; color:#fff;}
+.HPContent_l,.HPContent_c,.HPContent_r{ float:left;}
+.HPPlateBtnBox{ position:absolute; right:10px; top:8px;}
+.HPPlateBtn01,.HPPlateBtn02,.HPPlateBtn03{ display:block; width:18px; height:18px; background-image:url(../images/EmphasisPersonnel/HPTitleBtn.png); float:left; margin-left:10px;}
+.HPPlateBtn02{ background-position:-18px 0;}
+.HPPlateBtn03{ background-position:-36px 0;}
+.HPPlateBtn01:hover{ background-position:0 -18px;}
+.HPPlateBtn02:hover{ background-position:-18px -18px;}
+.HPPlateBtn03:hover{ background-position:-36px -18px;}
+.HPAttentionList{ position:relative; min-height:60px; border-bottom:1px solid #278ac1; padding-bottom:5px; padding:10px 0;}/*2016.12.14*/
+.HPAttention{ padding-top:5px;}
+.HPAttentionList_r{ margin-left:77px; margin-right:10px;}
+.HPAttentionListImg{ position:absolute; top:10px; left:0px; width:60px; height:60px;}
+.HPAttentionListName{ color:#00f7ff; font-size:14px; overflow: hidden; text-overflow: ellipsis; white-space:nowrap; display:block; margin-bottom:5px;}
+.HPAttentionListName:hover{ color:#2ec7c9;}
+.HPAttentionList_r p{ overflow: hidden;white-space:nowrap; line-height:18px; color:#fff;}
+.HPInform{ padding:10px 10px 0;}
+.HPInformList{ width:100%; margin-bottom:10px;}
+.HPInformTitle{ color:#FF0; font-size:15px; font-weight:bold; line-height:20px; text-align:center; overflow: hidden; text-overflow: ellipsis; white-space:nowrap; margin-bottom:5px;}
+.HPInformContent{ color:#fff; font-size:14px; font-weight:normal; line-height:20px; text-align:left; word-wrap:break-word; text-indent:28px;}
+.HPInformTime{ color:#00fdff; text-align:right; margin-top:5px;}
+.PHTable { line-height:26px; border-collapse:collapse; color:#0039ac;}
+.PHTable, .PHTable th, .PHTable td { border: 1px solid #3e99ff; height:26px;}
+.PHTable th{ background:url(../images/EmphasisPersonnel/HPTableBg.png) repeat-x; color:#fff;}
+.PHTable div{ margin:0 10px;}
+.PHTableBg01{ background-color:#c4ddff;}
+.PHTable02{ color:#fff;}
+.PHTable02, .PHTable02 th, .PHTable02 td { border: 1px solid #278ac1; height:26px;}
+.PHTable02 .PHTableBg01{ background-color:rgba(0, 46, 87, 0.5);}
+.PHTable02 th{ background-color:rgba(0, 16, 34, 0.6); color:#00fdff; background-image:none;}
+.HPWatch{ position:absolute; right:150px; top:0; color:#FF0; font-size:12px; font-weight:bold; line-height:30px; text-align:right;}
+.HPWatch span{ color:#fff;}
+.HPPlateStatistical{ line-height:30px; text-align:center; color:#fff;}
+.HPPlateStatistical span{ font-weight:bold; margin-right:30px;}
+.HPSOnline{ color:#9dffaf;}
+.HPSOffline{ color:#ff8686;}
+.HPAList_l{ width:50%; float:left;}
+.HPAListBox{ padding:0px 10px 5px;}
+.HPWatch02{ color:#00fdff; font-weight:bold; font-size:14px; text-align:center; line-height:30px; padding-top:5px;}
+.HPWatch02 span{ color:#FF0;}
+.HPLight_b{ background:url(../images/EmphasisPersonnel/Light_b.png) no-repeat center top; height:15px; position:absolute; bottom:-1px; left:0; right:0;}
+.HPLight_r{ background:url(../images/EmphasisPersonnel/Light_r.png) no-repeat center top; width:15px; position:absolute; bottom:0; right:-1px; top:34px;}
+.HPLight_l{ background:url(../images/EmphasisPersonnel/Light_l.png) no-repeat center top; width:15px; position:absolute; bottom:0; left:-1px; top:34px;}
+/*首页最大化模块*/
+.HPPlateContent02{ padding:10px 0 0 10px;}
+.HPPlateContent02_l,.HPPlateContent02_r{ float:left;}
+.HPMaximizePlate{ margin:0px 10px 10px 0; /*background-color:#fff; background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,1)), to(rgba(196,231,255,1)));背景渐变*/ border:1px solid #0b64e4; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); position:relative;background-color: rgba(11,112,255,0.1);border-radius: 5px;}
+.HPMaximizePlateTitle{ height:30px; position:relative;}
+.HPMaximizeChart{ padding:0px 15px 15px; color:#fff;}
+.HPMaximizeChartTitle{ text-align:center; line-height:30px; font-size:15px; font-weight:bold; color:#00fdff;}
+.HPInformMax{ border:1px solid #278ac1; width:300px; padding:15px 15px 10px; position:relative; cursor:pointer; position:relative; float:left; margin:0 15px 15px 0; border-radius:3px;/*圆角*/ box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);}
+.HPInformMax:hover{ border-color:#00fdff; background-color: rgba(0, 46, 87, 0.5);}
+.HPInformMaxTitle{ text-align:center; line-height:30px; font-size:15px; color:#00fdff; text-align:center; overflow: hidden; text-overflow: ellipsis; white-space:nowrap; margin-bottom:5px;}
+.HPInformMaxContent{ color:#fff; line-height:22px; text-indent:24px; overflow-y:auto; border:1px dotted #278ac1; padding:10px; border-radius:3px;/*圆角*/}
+.HPInformMaxName{ margin-top:5px;}
+.HPInformMaxName,.HPInformMaxTime{ text-align:right; line-height:22px; color:#4bbfff;}
+.HPInformNumber{ font-size:16px; color:#00bffb; position:absolute; left:8px; top:3px;}
+.HPMaximizePlateTitle .EPPlateOption a{ color:#fff;}
+.HPMaximizePlateTitle .EPPlateOption a:hover,.HPMaximizePlateTitle .EPPlateOption .EPPlateOption_on{ color:#00fdff;}
+
+
+.HPSolutionListImg{
+	top: 15px;
+	left:0;
+	position:absolute;
+	width: 100%;
+	height:100%;
+	position:absolute;
+}
+.HPSolutionListImg1{
+	top: 17px;
+	left:0;
+	position:absolute;
+	width: 100%;
+	height:100%;
+	position:absolute;
+}
+
+.QuickBtn{ display:block; border:1px solid #ccc; float:left; padding:0px 10px; line-height:28px; font-size:12px; color:#666; text-decoration:none; font-family:"微软雅黑","宋体"; background-color:#fafafa;}
+.QuickBtn:hover{ border-color:#0f7af2; color:#0f7af2; background-color:#fff;}
+.CMState01{ color:#ff0000;}/*****红*******/
+.CMState02{ color:#ffa800;}/****黄*******/
+.CMState03{ color:#3abe20;}/*****绿******/
+.CMState04{ color:#0065ff;}/***蓝00f7ff****/
+
+.EPContent_bg{ background:url(../images/index_ja/bj.jpg);}
+
